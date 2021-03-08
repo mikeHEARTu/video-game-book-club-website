@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+body
+{
+	background: rgba(194, 54, 22,1.0);
+	color:#2f3640;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+}
+.contentContainer
+{
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: linear-gradient(to bottom right, rgba(140, 122, 230,0.7), rgba(194, 54, 22,0.9)), center / cover no-repeat url(img/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: 1s ease-in 0.5s backwards fadeIn;
+}
+.textContainer
+{
+	width: 33vw;
+	background: #ecf0f1;
+	padding: 2em;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation: 1s ease-out 1s backwards fadeInUp;
+}
+.textContainer a
+{
+	text-decoration: none;
+	color:#2f3640;
+	transition: 0.5s;
+}
+.textContainer a:hover, a:active
+{
+	color:#0097e6;
+}
+.podcastEmbed
+{
+	margin-bottom: 2vh;
+}
+.textTitle
+{
+	font-size: 2em;
+	font-weight: 300;
+	margin-bottom: 3vh;
+}
+.textDescription
+{
+	margin-bottom: 2vh;
+}
+.textBreak
+{
+	width: 25%;
+	border-bottom: 1px solid black;
+	margin-bottom: 2vh;
+}
+.podcastLinks
+{
+	width: 66%;
+	font-size: 1.5em;
+	margin-bottom: 2vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.socialContainer
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.socialImage
+{
+	display: block;
+	width: 5vw;
+	border-radius: 50%;
+	margin-bottom: 1vh;
+}
+.socialName
+{
+	margin-bottom: 1vh;
+}
+.socialIcons
+{
+	font-size: 0.75em;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@keyframes fadeIn {
+    from {filter:opacity(0);}
+	to {filter:opacity(1);}
+} 
+@keyframes fadeInUp {
+    from {filter:opacity(0); transform: translateY(2vh);}
+	to {filter:opacity(1);}
+} 
